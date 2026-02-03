@@ -1,0 +1,22 @@
+.content-left{
+     padding-top : 5%;
+    margin-left: 1%;  
+     margin-right: 3%;
+     padding-right:5%;
+}
+
+.content-right img{
+    width: 93%;
+    padding-left: 4%;
+    
+   
+}.text{
+  padding-top: 5px;   /* FIXED */
+  padding-left: 25%;
+  display: flex;
+  gap: 24px; 
+         /* SPACE BETWEEN LINKS */
+}
+.text a{
+ text-decoration: none; 
+}
