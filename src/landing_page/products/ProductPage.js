@@ -8,11 +8,11 @@ import Footer from '../Footer';
 function Hero () {
     return ( 
     <>
-    <Navbar/>
+  
     <LeftSection/>
     <RightSection/>
     <Universe/>
-    <Footer/>
+   
     
     
     </>

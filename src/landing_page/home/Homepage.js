@@ -10,14 +10,14 @@ import Awards from './awards';
 function Homepage() {
     return ( 
         <>
-        <Navbar/>
+       
         <Hero/>
          <Awards/>
          <Stats/>
          <Pricing/>
         <Education/>
         <OpenAccount/>
-        <Footer/>
+       
         </>
         
         

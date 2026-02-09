@@ -8,10 +8,8 @@ function SupportPage () {
     return ( 
 
     <>
-    <Navbar />
     <Hero/>
     <CreateTicket />
-    <Footer />
     </>
 );
 }

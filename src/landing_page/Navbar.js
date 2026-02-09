@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from 'react-router-dom';
 
 const TradeZenLogo = (
   <svg
@@ -51,9 +51,9 @@ function Navbar() {
   <div className="container-fluid px-3" style={{backgroundColor: "#e2e3e5"}}>
 
     {/* LOGO */}
-    <a className="navbar-brand d-flex align-items-center py-0" href="#">
+    <Link className="navbar-brand d-flex align-items-center py-0" to ="/">
       {TradeZenLogo}
-    </a>
+    </Link>
 
     {/* TOGGLER */}
     <button
@@ -71,48 +71,47 @@ function Navbar() {
       {/* RIGHT SIDE LINKS */}
       <ul className="navbar-nav ms-auto mb-0 gap-3 align-items-center me-5">
         <li className="nav-item">
-          <a className="nav-link py-1 fw-medium " href="#">
+          <Link className="nav-link py-1 fw-medium " to="/signup">
            Signup
-          </a>
+          </Link>
         </li>
-
         <li className="nav-item">
-          <a className="nav-link py-1 fw-medium" href="#">
+          <Link className="nav-link py-1 fw-medium" to="/about">
            About
-          </a>
+          </Link>
         </li>
 
         <li className="nav-item">
-          <a className="nav-link py-1 fw-medium" href="#">
+          <Link className="nav-link py-1 fw-medium" to="/products">
             Products
-          </a>
+          </Link>
         </li>
 
         <li className="nav-item">
-          <a className="nav-link py-1 fw-medium" href="#">
+          <Link className="nav-link py-1 fw-medium" to="/pricing">
            Pricing
-          </a>
+          </Link>
         </li>
 
         <li className="nav-item">
-          <a
+          <Link
             className="nav-link  py-1 fw-medium"
-            href="#"
+            to="/support"
            
           >
            Support
-          </a>
+          </Link>
         </li>
 
         <li className="nav-item ">
-          <a
+          <Link
             className="nav-link py-1 fw-medium"
-            href="#"
+            to="/menu"
             role="button"
             
           >
            &#9776;
-          </a>
+          </Link>
         </li>
       </ul>
 
