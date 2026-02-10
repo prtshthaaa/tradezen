@@ -1,4 +1,5 @@
 import React from "react";
+import "./home/css/hero.css";
 
 function OpenAccount() {
   return (

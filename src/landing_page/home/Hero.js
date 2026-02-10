@@ -6,11 +6,17 @@ function Hero () {
 
     <div className ="container p-4 mb-5">
         <div className ="row text-center">
-            <img src = 'media/images/homeHero.png' alt ='Hero Image' width={1200} className ='mb-4'/>
+            <img src = 'media/images/hero4.png' alt ='Hero Image' width={100}  className ='mb-4'/>
             
-            <h1 className ='mt-5'>Invest in everything</h1>
-            <p >Online platform to invest in stocks, derivatives, mutual funds, and more</p>
-            <button className='hero-btn mb-5'>Signup now</button>
+         <div className="hero-content">
+  <h1 className="mt-2 slide-down">Invest in everything</h1>
+  <p className="slide-down delay-1">
+    Online platform to invest in stocks, derivatives, mutual funds, and more
+  </p>
+  <button className="hero-btn mb-5 slide-down delay-2">
+    Signup now
+  </button>
+</div>
         </div>
 
 

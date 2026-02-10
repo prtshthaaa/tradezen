@@ -8,3 +8,58 @@ width: 70%;
     width: 80%;
     margin-top: 5px;
 }
+/* Initial hidden state */
+.award-left,
+.award-right,
+.award-bottom {
+  opacity: 0;
+}
+
+/* When section enters view */
+.in-view .award-left {
+  animation: slideLeft 0.8s ease forwards;
+}
+
+.in-view .award-right {
+  animation: slideRight 0.8s ease forwards;
+  animation-delay: 0.15s;
+}
+
+.in-view .award-bottom {
+  animation: slideUp 0.8s ease forwards;
+  animation-delay: 0.3s;
+}
+
+/* Keyframes */
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRight {
+  from {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

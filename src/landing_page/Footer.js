@@ -1,4 +1,5 @@
-import React from 'react'
+import React from "react";
+
 const TradeZenLogo = (
   <svg
     width="160"
@@ -8,10 +9,10 @@ const TradeZenLogo = (
     xmlns="http://www.w3.org/2000/svg"
   >
     {/* Icon */}
-    <circle cx="25" cy="20" r="18" stroke="#2563EB" strokeWidth="2" />
+    <circle cx="25" cy="20" r="18" stroke="#F97316" strokeWidth="2" />
     <path
       d="M14 24L18 20L22 23L28 16"
-      stroke="#2563EB"
+      stroke="#F97316"
       strokeWidth="2.5"
       strokeLinecap="round"
       strokeLinejoin="round"
@@ -23,111 +24,107 @@ const TradeZenLogo = (
       y="26"
       fontSize="22"
       fontWeight="700"
-      fill="#0F172A"
+      fill="#E5E7EB"
       fontFamily="Inter, Arial, sans-serif"
     >
       Trade
     </text>
 
     <text
-      x="111"   /* 👈 spacing between e and Z */
+      x="111"
       y="26"
       fontSize="22"
       fontWeight="700"
-      fill="#2563EB"
+      fill="#F97316"
       fontFamily="Inter, Arial, sans-serif"
     >
       Zen
     </text>
   </svg>
 );
+
 function Footer() {
-    return ( 
-        <div className='container-fluid border-top mt-5' style={{backgroundColor: "#e2e3e5"}}>
-            <div className='row  mt-5'>
-                <div className='col-3 ps-5'>
-                    {TradeZenLogo}
-                    <p>&copy; 2010-2024, Not TradeZen Broking Ltd.
-                        All rights reserved.
-                    </p>
-                    <div className="social-icons text-muted">
-    <a href="#"><i className="fa-brands fa-x-twitter text-muted"></i></a>
-    <a href="#"><i className="fa-brands fa-facebook text-muted"></i></a>
-    <a href="#"><i className="fa-brands fa-instagram text-muted"></i></a>
-    <a href="#"><i className="fa-brands fa-linkedin text-muted"></i></a>
-    <a href="#"><i className="fa-brands fa-telegram text-muted"></i></a>
-  </div>
+  return (
+    <div className="container-fluid bg-dark bg-opacity-75 border-top border-secondary mt-5">
+      <div className="row pt-5 pb-4">
 
+        {/* LOGO + ABOUT */}
+        <div className="col-12 col-md-3 ps-md-5 mb-4">
+          {TradeZenLogo}
+          <p className="text-light opacity-75 mt-3 small">
+            © 2010–2026, TradeZen Private Limited.  
+            All rights reserved.
+          </p>
 
-                </div>
-                <div className='col-3'>
-                    <h6 className='fw-bold'>Products</h6>
-                    <ul className='list-unstyled'>
-                        <li><a href="#" className="text-decoration-none text-dark">Company</a></li>
-                        <li><a href="#" className="text-decoration-none text-dark">About Us</a></li>
-                        <li><a href="#" className="text-decoration-none text-muted">Careers</a></li>
-                        <li><a href="#" className="text-decoration-none text-muted">Leadership</a></li>
-                        <li><a href="#" className="text-decoration-none text-muted">Our Team</a></li>
-                        <li><a href="#" className="text-decoration-none text-muted">Press & Media</a></li>
-                        <li><a href="#" className="text-decoration-none text-muted">Blog</a></li>
-                        <li><a href="#" className="text-decoration-none text-muted">Contact Us</a></li>
-                        <li><a href="#" className="text-decoration-none text-muted">Sustainability</a></li>
-
-
-                    </ul>
-                </div>
-                <div className='col-3'>
-                    <h6 className='fw-bold'>Support</h6>
-                    <ul className='list-unstyled'>
-                       <li><a href="#" className="text-decoration-none text-dark">Help Center</a></li>
-<li><a href="#" className="text-decoration-none text-muted">Contact Support</a></li>
-<li><a href="#" className="text-decoration-none text-muted">FAQs</a></li>
-<li><a href="#" className="text-decoration-none text-muted">System Status</a></li>
-<li><a href="#" className="text-decoration-none text-muted">Report an Issue</a></li>
-
-                    </ul>
-                </div>
-                <div className='col-3'>
-                    <h6 className='fw-bold'></h6>
-                    <ul className='list-unstyled'>
-                       <li><a href="#" className="text-decoration-none text-dark">My Account</a></li>
-<li><a href="#" className="text-decoration-none text-muted">Login</a></li>
-<li><a href="#" className="text-decoration-none text-muted">Register</a></li>
-<li><a href="#" className="text-decoration-none text-muted">Order History</a></li>
-
-                    </ul>
-                </div>
-<div className='mt-4 text-muted ps-5 pe-4'>
-     <p>TradeZen Private Limited is a technology-enabled financial services company registered under
-                     the Companies Act, 2013, Government of India. 
-                     <br></br>
-                     <br></br>
-                     The company is incorporated as a private limited entity and 
-                     operates in compliance with applicable Indian laws and regulatory 
-                     frameworks. TradeZen Private Limited is registered with the Ministry
-                      of Corporate Affairs (MCA) and, where applicable,
-                       with regulatory authorities such as SEBI, NSE, and BSE 
-                       for permitted financial and market-related activities.
-                       <br></br>
-                       <br></br>
-                        All information, tools, products,
-                         and services provided on this platform are for 
-                         informational purposes only and do not constitute
-                          investment advice, financial solicitation, or an offer 
-                          to buy or sell securities. Market investments are subject 
-                          to risk, and users are advised to read all related documents
-                           carefully before making any financial decisions. 
-                           <br></br>
-                           <br></br>
-                           TradeZen Private Limited does not guarantee returns or profits
-                            and shall not be held responsible for any losses arising from the use of information available
-                             on this website. All trademarks, logos, and brand names are the property of their respective owners. © 2026 TradeZen Private Limited.
-                              All rights reserved.</p>
-</div>
-               
-            </div>
+          <div className="d-flex gap-3 fs-5">
+            <a href="#" className="text-secondary">
+              <i className="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="#" className="text-secondary">
+              <i className="fa-brands fa-facebook"></i>
+            </a>
+            <a href="#" className="text-secondary">
+              <i className="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#" className="text-secondary">
+              <i className="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="#" className="text-secondary">
+              <i className="fa-brands fa-telegram"></i>
+            </a>
+          </div>
         </div>
-     );
+
+        {/* PRODUCTS */}
+        <div className="col-6 col-md-3 mb-4">
+          <h6 className="fw-bold text-light">Products</h6>
+          <ul className="list-unstyled">
+            <li><a href="#" className="text-decoration-none text-secondary">Company</a></li>
+            <li><a href="#" className="text-decoration-none text-secondary">About Us</a></li>
+            <li><a href="#" className="text-decoration-none text-secondary">Careers</a></li>
+            <li><a href="#" className="text-decoration-none text-secondary">Leadership</a></li>
+            <li><a href="#" className="text-decoration-none text-secondary">Blog</a></li>
+          </ul>
+        </div>
+
+        {/* SUPPORT */}
+        <div className="col-6 col-md-3 mb-4">
+          <h6 className="fw-bold text-light">Support</h6>
+          <ul className="list-unstyled">
+            <li><a href="#" className="text-decoration-none text-secondary">Help Center</a></li>
+            <li><a href="#" className="text-decoration-none text-secondary">Contact Support</a></li>
+            <li><a href="#" className="text-decoration-none text-secondary">FAQs</a></li>
+            <li><a href="#" className="text-decoration-none text-secondary">System Status</a></li>
+          </ul>
+        </div>
+
+        {/* ACCOUNT */}
+        <div className="col-6 col-md-3 mb-4">
+          <h6 className="fw-bold text-light">Account</h6>
+          <ul className="list-unstyled">
+            <li><a href="#" className="text-decoration-none text-secondary">My Account</a></li>
+            <li><a href="#" className="text-decoration-none text-secondary">Login</a></li>
+            <li><a href="#" className="text-decoration-none text-secondary">Register</a></li>
+            <li><a href="#" className="text-decoration-none text-secondary">Order History</a></li>
+          </ul>
+        </div>
+
+        {/* DISCLAIMER */}
+        <div className="col-12 px-md-5 mt-3">
+          <p className="text-secondary small lh-lg">
+            TradeZen Private Limited is a technology-enabled financial services
+            company registered under the Companies Act, 2013, Government of India.
+            The platform provides market-related tools and information for
+            educational purposes only and does not constitute investment advice.
+            Market investments are subject to risk. TradeZen does not guarantee
+            profits or returns. Users should make financial decisions at their
+            own discretion after reviewing all applicable documents.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  );
 }
 
 export default Footer;

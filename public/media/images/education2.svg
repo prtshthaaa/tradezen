@@ -1,0 +1,60 @@
+<svg
+  width="478"
+  height="320"
+  viewBox="0 0 478 320"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+
+  <!-- Floating papers -->
+  <path d="M40 40L70 20L90 45L60 65Z" fill="#F3F4F6"/>
+  <path d="M400 50L430 30L450 55L420 75Z" fill="#F3F4F6"/>
+  <path d="M360 250L390 230L410 255L380 275Z" fill="#E5E7EB"/>
+
+  <!-- Graduation cap top -->
+  <rect x="120" y="70" width="240" height="18" rx="6" fill="#E5E7EB"/>
+
+  <!-- Tassel -->
+  <rect x="265" y="70" width="3" height="28" fill="#2563EB"/>
+  <circle cx="266.5" cy="102" r="5" fill="#2563EB"/>
+
+  <!-- Main book -->
+  <rect x="135" y="88" width="210" height="130" rx="10" fill="#FF5F00"/>
+  <rect x="135" y="88" width="210" height="130" rx="10" fill="url(#shadow)"/>
+
+  <!-- Left sticky notes -->
+  <rect x="95" y="120" width="60" height="38" rx="4" fill="#FDBA74"/>
+  <rect x="105" y="168" width="50" height="30" rx="4" fill="#FED7AA"/>
+
+  <!-- Bottom dots -->
+  <circle cx="115" cy="235" r="3" fill="#2563EB"/>
+  <circle cx="135" cy="235" r="3" fill="#2563EB"/>
+  <circle cx="155" cy="235" r="3" fill="#2563EB"/>
+
+  <!-- Right document -->
+  <rect x="355" y="170" width="60" height="70" rx="5" fill="#F3F4F6"/>
+  <rect x="365" y="185" width="40" height="4" fill="#9CA3AF"/>
+  <rect x="365" y="195" width="40" height="4" fill="#9CA3AF"/>
+  <rect x="365" y="205" width="30" height="4" fill="#9CA3AF"/>
+
+  <!-- Varsity text -->
+  <text
+    x="200"
+    y="160"
+    font-size="42"
+    font-family="Georgia, serif"
+    font-weight="600"
+    fill="#FFFFFF"
+  >
+    Varsity
+  </text>
+
+  <!-- Shadow gradient -->
+  <defs>
+    <linearGradient id="shadow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.18"/>
+    </linearGradient>
+  </defs>
+
+</svg>

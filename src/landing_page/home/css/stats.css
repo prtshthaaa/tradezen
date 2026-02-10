@@ -7,7 +7,7 @@
 
 .content-right img{
     width: 93%;
-    padding-left: 4%;
+    padding-left: 0px;
     
    
 }.text{
@@ -20,3 +20,7 @@
 .text a{
  text-decoration: none; 
 }
+
+
+
+
