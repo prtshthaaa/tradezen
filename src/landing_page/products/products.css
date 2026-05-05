@@ -1,0 +1,134 @@
+.products-hero {
+  text-align: center;
+  padding: 80px 0;
+}
+
+.products-hero h1 {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.products-hero p {
+  margin: 10px 0;
+  color: gray;
+}
+
+.link {
+  color: #387ed1;
+  cursor: pointer;
+}
+
+/* SECTION */
+.product-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 10%;
+  gap: 50px;
+}
+
+.product-section.reverse {
+  flex-direction: row-reverse;
+}
+
+.product-left img {
+  width: 90%;
+}
+
+.product-right {
+  width: 40%;
+}
+
+.product-right h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.product-right p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.links {
+  margin: 15px 0;
+}
+
+.links span {
+  margin-right: 20px;
+  color: #387ed1;
+  cursor: pointer;
+}
+
+.badges img {
+  width: 140px;
+  margin-right: 10px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .product-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .product-right {
+    width: 100%;
+  }
+}
+
+.universe {
+  text-align: center;
+  padding: 80px 10%;
+}
+
+.sub-text {
+  color: gray;
+  font-size: 14px;
+}
+
+.universe h2 {
+  font-size: 28px;
+  margin: 20px 0 10px;
+}
+
+.desc {
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.universe-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.card {
+  text-align: center;
+}
+
+.card img {
+  width: 140px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #666;
+  font-size: 14px;
+}
+
+.signup-btn {
+  margin-top: 40px;
+  padding: 12px 25px;
+  background: #387ed1;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .universe-grid {
+    grid-template-columns: 1fr;
+  }
+}

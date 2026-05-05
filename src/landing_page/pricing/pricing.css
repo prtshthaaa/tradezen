@@ -1,0 +1,140 @@
+/* ================= THEME ================= */
+:root {
+  --bg: #0f0f0f;
+  --card: #1a1a1a;
+  --text: #ffffff;
+  --subtext: #aaaaaa;
+  --primary: #ff7a00;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+
+/* ================= HERO ================= */
+.pricing-hero {
+  text-align: center;
+  padding: 100px 0 60px;
+}
+
+.pricing-hero h1 {
+  font-size: 42px;
+  color: var(--primary);
+  margin-bottom: 15px;
+}
+
+/* 🔥 yahi tumne bola tha — line badi */
+.pricing-hero p {
+  font-size: 20px;
+  color: var(--subtext);
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+
+/* ================= CARDS ================= */
+.pricing-cards {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 60px;
+}
+
+.card {
+  background: var(--card);
+  padding: 50px 30px;
+  text-align: center;
+  border-radius: 12px;
+  width: 280px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 25px rgba(255, 122, 0, 0.3);
+}
+
+/* 🔥 numbers bada kiya */
+.card h2 {
+  font-size: 50px;
+  color: var(--primary);
+}
+
+.card p {
+  margin-top: 12px;
+  color: var(--subtext);
+  font-size: 15px;
+}
+
+
+/* ================= BUTTON ================= */
+.signup-center {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.signup-center button {
+  padding: 14px 32px;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.signup-center button:hover {
+  background: #ff8f1f;
+}
+
+
+/* ================= CHARGES ================= */
+.charges {
+  padding: 60px 10%;
+}
+
+/* 🔥 right shift */
+.charges-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.charges h3 {
+  color: var(--primary);
+  font-size: 18px;
+}
+
+/* list thodi right push */
+.charges ul {
+  margin-top: 20px;
+  margin-left: 40px;
+  color: var(--subtext);
+  line-height: 1.7;
+}
+
+.charges li {
+  margin-bottom: 12px;
+}
+
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+  .pricing-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .charges-header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .charges ul {
+    margin-left: 0;
+  }
+}

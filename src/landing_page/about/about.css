@@ -1,0 +1,132 @@
+/* WRAPPER — no solid bg, let global gradient show */
+.about-wrapper {
+  padding: 80px 10%;
+  color: #ffffff;
+}
+
+/* HERO TEXT */
+.about-hero {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.about-hero h1 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+/* 2 COLUMN SECTION */
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+/* LEFT + RIGHT */
+.about-left,
+.about-right {
+  width: 48%;
+}
+
+/* TEXT */
+.about-content p {
+  margin-bottom: 18px;
+  line-height: 1.8;
+  color: #cfcfcf;
+  font-size: 15px;
+}
+
+/* HIGHLIGHT LINK (orange theme) */
+.blue-link {
+  color: #ff8a00;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.blue-link:hover {
+  color: #ffb347;
+}
+
+/* TEAM SECTION */
+.team {
+  padding: 100px 10%;
+}
+
+.team h2 {
+  text-align: center;
+  margin-bottom: 60px;
+  font-weight: 500;
+  font-size: 28px;
+}
+
+/* FLEX */
+.team-container {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+/* LEFT */
+.team-left {
+  text-align: center;
+  width: 35%;
+}
+
+.team-left img {
+  width: 200px;
+  border-radius: 50%;
+  border: 3px solid rgba(255, 138, 0, 0.4);
+}
+
+.team-left h3 {
+  margin-top: 20px;
+}
+
+.team-left p {
+  color: #aaa;
+}
+
+/* RIGHT */
+.team-right {
+  width: 60%;
+}
+
+.team-right p {
+  margin-bottom: 15px;
+  line-height: 1.8;
+  color: #d0d0d0;
+}
+
+/* LINKS */
+.links {
+  color: #ff8a00;
+  cursor: pointer;
+}
+
+.links:hover {
+  text-decoration: underline;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+  }
+
+  .about-left,
+  .about-right {
+    width: 100%;
+  }
+
+  .team-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .team-right {
+    width: 100%;
+  }
+}

@@ -1,0 +1,73 @@
+.support-hero {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 10%;
+background-image: linear-gradient( to top,
+ rgba(255, 138, 0, 0.35) 0%,
+  rgba(255, 138, 0, 0.18) 20%,
+   rgba(255, 136, 0, 0.078) 35%,
+ transparent 55% );
+  color: white;
+}
+
+.left {
+  width: 60%;
+}
+
+.left h3 {
+  margin: 20px 0;
+}
+
+.left input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  margin: 15px 0;
+}
+
+.links a {
+  margin-right: 15px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.right {
+  width: 30%;
+}
+
+.ticket-section {
+  padding: 60px 10%;
+}
+
+.grid {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.grid div {
+  width: 30%;
+}
+
+.grid h4 {
+  margin-bottom: 10px;
+}
+
+.grid p {
+  margin: 6px 0;
+  color: #555;
+  cursor: pointer;
+}
+
+.grid a {
+  display: block;
+  margin: 6px 0;
+  color: rgba(255, 136, 0, 0.614);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.grid a:hover {
+  text-decoration: underline;
+}
