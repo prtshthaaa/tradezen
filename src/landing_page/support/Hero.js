@@ -6,6 +6,7 @@ import React, { useState } from "react";
 function Hero() {
 
   const [query, setQuery] = useState("");
+  const [selectedAnswer, setSelectedAnswer] = useState("");
 
 const [showDropdown, setShowDropdown] = useState(false);
 
