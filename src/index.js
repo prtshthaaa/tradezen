@@ -1,3 +1,4 @@
+import Dashboard from "./landing_page/dashboard/Dashboard";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
@@ -26,6 +27,7 @@ root.render(
       <Route path="/signup" element={<Signup />} />
       <Route path="/support" element={<SupportPage />} />
       <Route path="*" element={<Notfound />} />
+      <Route path="/dashboard" element={<Dashboard/>}/>
 
     </Routes>
     <Footer/>

@@ -1,3 +1,4 @@
+import { useState } from "react";
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -45,6 +46,7 @@ const TradeZenLogo = (
 );
 
 function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
     <nav className="navbar navbar-expand-lg bg-dark bg-opacity-75 border-bottom border-secondary py-1 fixed-top">
       <div className="container-fluid px-3">
@@ -54,15 +56,7 @@ function Navbar() {
           {TradeZenLogo}
         </Link>
 
-        {/* TOGGLER */}
-        <button
-          className="navbar-toggler border-0"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
+        
 
         {/* CONTENT */}
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -117,6 +111,63 @@ function Navbar() {
                 Support
               </Link>
             </li>
+
+            <div style={{ position: "relative" }}>
+  <button
+    onClick={() => setMenuOpen(!menuOpen)}
+    style={{
+      background: "transparent",
+      border: "none",
+      color: "#ff7b2c",
+      fontSize: "28px",
+      cursor: "pointer",
+    }}
+  >
+    ☰
+  </button>
+
+  {menuOpen && (
+    <div
+      style={{
+        position: "absolute",
+        right: "0",
+        top: "40px",
+        background: "#111827",
+        border: "1px solid #ff7b2c",
+        borderRadius: "10px",
+        padding: "10px",
+        minWidth: "180px",
+        zIndex: "1000",
+      }}
+    >
+      <Link
+        to="/dashboard"
+        style={{
+          display: "block",
+          color: "white",
+          padding: "10px",
+          textDecoration: "none",
+        }}
+      >
+        Dashboard
+      </Link>
+
+      <button
+        style={{
+          width: "100%",
+          background: "transparent",
+          border: "none",
+          color: "#ff7b2c",
+          padding: "10px",
+          textAlign: "left",
+          cursor: "pointer",
+        }}
+      >
+        Logout
+      </button>
+    </div>
+  )}
+</div>
 
             <li className="nav-item">
               <Link

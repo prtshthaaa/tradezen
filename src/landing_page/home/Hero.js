@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import React from 'react'
 import './css/hero.css';
 
@@ -13,9 +14,11 @@ function Hero () {
   <p className="slide-down delay-1">
     Online platform to invest in stocks, derivatives, mutual funds, and more
   </p>
+  <Link to="/signup" >
   <button className="hero-btn mb-5 slide-down delay-2">
     Signup now
   </button>
+  </Link>
 </div>
         </div>
 

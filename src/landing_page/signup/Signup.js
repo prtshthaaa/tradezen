@@ -1,7 +1,9 @@
+import { useNavigate } from "react-router-dom";
 import React, { useState } from "react";
 import "./signup.css";
 
 function Signup() {
+  const navigate = useNavigate();
   const [isLogin, setIsLogin] = useState(false);
 
   return (
@@ -22,7 +24,9 @@ function Signup() {
           <input type="password" placeholder="Confirm Password" />
         )}
 
-        <button>
+        <button
+          onClick={() => navigate("/dashboard")}
+          >
           {isLogin ? "Login" : "Signup"}
         </button>
 
