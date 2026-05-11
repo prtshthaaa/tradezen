@@ -6,7 +6,7 @@ import React, { useState } from "react";
 function Hero() {
 
   const [query, setQuery] = useState("");
-const [selectedAnswer, setSelectedAnswer] = useState("");
+
 const [showDropdown, setShowDropdown] = useState(false);
 
 const faqs = [
@@ -189,10 +189,10 @@ const filteredFaqs = faqs.filter((faq) =>
 </div>
 
         <div className="links">
-          <a>Track account opening</a>
-          <a>Track segment activation</a>
-          <a>Intraday margins</a>
-          <a>Kite user manual</a>
+          <a href="/">Track account opening</a>
+          <a href="/">Track segment activation</a>
+          <a href="/">Intraday margins</a>
+          <a href="/">Kite user manual</a>
         </div>
       </div>
 
